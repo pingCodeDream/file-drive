@@ -27,7 +27,7 @@ export const getFiles = query({
         if(!identity) {
             return [];
         }
-
+        
         return ctx.db.query('files').collect()
     }
 })
